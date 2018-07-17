@@ -1,5 +1,5 @@
 <?php
-namespace G2B2G\File;
+namespace UploadFile\File;
 
 use App\Model\File\File;
 

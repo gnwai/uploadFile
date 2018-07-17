@@ -1,6 +1,6 @@
 <?php
 
-namespace G2B2G\Model\File;
+namespace UploadFile\Model\File;
 
 use Illuminate\Database\Eloquent\Model;
 

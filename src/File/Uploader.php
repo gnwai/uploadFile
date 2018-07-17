@@ -1,5 +1,5 @@
 <?php
-namespace G2B2G\File;
+namespace UploadFile\File;
 
 //use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\UploadedFile;

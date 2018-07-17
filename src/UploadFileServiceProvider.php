@@ -1,10 +1,10 @@
 <?php
 
-namespace G2B2G;
+namespace UploadFile;
 
 use Illuminate\Support\ServiceProvider;
 
-class UpdalodFileServiceProvider extends ServiceProvider{
+class UploadFileServiceProvider extends ServiceProvider{
 
 
     public function boot()

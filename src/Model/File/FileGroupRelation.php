@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Model\File;
+namespace UploadFile\Model\File;
 
-use G2B2G\Contracts\Eloquent\Translate\Base;
+//use G2B2G\Contracts\Eloquent\Translate\Base;
 
 trait FileGroupRelation
 {
@@ -11,7 +11,7 @@ trait FileGroupRelation
 	{
 		$qry = $this->hasMany('App\Model\File\FileGroup', 'id', 'id');
 		if ( $qry ) {
-			return $qry->where('model', Base::getClassName());
+//			return $qry->where('model', Base::getClassName());
 		}
 	}
 

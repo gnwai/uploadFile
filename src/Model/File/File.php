@@ -1,14 +1,14 @@
 <?php
 
-namespace G2B2G\Model\File;
+namespace UploadFile\Model\File;
 
 use Illuminate\Database\Eloquent\Model;
-use G2B2G\Contracts\Eloquent\Translate\ModelProperty;
+//use G2B2G\Contracts\Eloquent\Translate\ModelProperty;
 
 class File extends Model
 {
 
-	use ModelProperty;
+//	use ModelProperty;
 
     protected $table = 'file';
 
