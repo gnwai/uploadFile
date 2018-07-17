@@ -1,0 +1,20 @@
+{
+  "name": "wubuze/upload-file",
+  "description": "upload file for PHP laravel",
+  "license": "MIT",
+  "keywords": ["upload file", "upload img"],
+  "require": {
+    "php": ">= 5.4"
+  },
+  "require-dev": {
+    "laravel/framework": "5.5.*"
+  },
+  "autoload": {
+      "psr-4": {
+          "UploadFile\\": "src"
+      }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "optimize-autoloader": true
+}
