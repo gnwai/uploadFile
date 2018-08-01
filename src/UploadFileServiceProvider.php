@@ -30,7 +30,7 @@ class UploadFileServiceProvider extends ServiceProvider{
 //            __DIR__.'/../config/config.php' => config_path('storage.php'),
 //        ]);
 
-        $path = realpath(__DIR__.'/../config/config.php');
+        $path = realpath(__DIR__.'/../config/storage.php');
 
         $this->publishes([$path => config_path('storage.php')], 'config');
         $this->mergeConfigFrom($path, 'storage');
