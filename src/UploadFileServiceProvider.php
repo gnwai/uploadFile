@@ -16,7 +16,7 @@ class UploadFileServiceProvider extends ServiceProvider{
     protected function registerMigrations()
     {
 //        if (Passport::$runsMigrations) {
-            return $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+             $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 //        }
 
         $this->publishes([
@@ -26,9 +26,9 @@ class UploadFileServiceProvider extends ServiceProvider{
 
     protected function registerConfig()
     {
-        $this->publishes([
-            __DIR__.'/../config/config.php' => config_path('storage.php'),
-        ]);
+//        $this->publishes([
+//            __DIR__.'/../config/config.php' => config_path('storage.php'),
+//        ]);
 
         $path = realpath(__DIR__.'/../config/config.php');
 
