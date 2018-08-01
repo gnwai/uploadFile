@@ -19,20 +19,21 @@ class UploadFileServiceProvider extends ServiceProvider{
              $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 //        }
 
-        $this->publishes([
-            __DIR__.'/../database/migrations' => database_path('migrations'),
-        ], 'passport-migrations');
+//        $this->publishes([
+//            __DIR__.'/../database/migrations' => database_path('migrations'),
+//        ], 'wubuze-migrations');
     }
 
     protected function registerConfig()
     {
-//        $this->publishes([
-//            __DIR__.'/../config/config.php' => config_path('storage.php'),
-//        ]);
+
 
         $path = realpath(__DIR__.'/../config/storage.php');
+        $path2 = realpath(__DIR__.'/../config/system.php');
 
-        $this->publishes([$path => config_path('storage.php')], 'config');
+        $this->publishes([$path => config_path('storage.php')], 'wubuze-config');
+        $this->publishes([$path2 => config_path('system.php')], 'wubuze-config');
+
         $this->mergeConfigFrom($path, 'storage');
     }
 
