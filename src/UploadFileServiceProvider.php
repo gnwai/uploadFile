@@ -3,6 +3,7 @@
 namespace UploadFile;
 
 use Illuminate\Support\ServiceProvider;
+use UploadFile\Console\MakeSystem;
 
 class UploadFileServiceProvider extends ServiceProvider{
 
@@ -11,22 +12,36 @@ class UploadFileServiceProvider extends ServiceProvider{
     {
         $this->registerMigrations();
         $this->registerConfig();
+
+        $this->registerCommand();
+        $this->commands('system.set');
+
     }
 
     protected function registerMigrations()
     {
 //        if (Passport::$runsMigrations) {
-             $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 //        }
 
 //        $this->publishes([
 //            __DIR__.'/../database/migrations' => database_path('migrations'),
 //        ], 'wubuze-migrations');
+
+
     }
+
+
+    protected function registerCommand()
+    {
+        $this->app->singleton('system.set', function () {
+            return new MakeSystem;
+        });
+    }
+
 
     protected function registerConfig()
     {
-
 
         $path = realpath(__DIR__.'/../config/storage.php');
         $path2 = realpath(__DIR__.'/../config/system.php');

@@ -14,7 +14,5 @@ class System extends \Illuminate\Database\Eloquent\Model
     use \jdavidbakr\ReplaceableModel\ReplaceableModel;
 
 
-    protected $casts = [
-        'val' => 'array'
-    ];
+
 }
