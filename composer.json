@@ -13,6 +13,14 @@
           "UploadFile\\": "src"
       }
   },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "UploadFile\\UploadFileServiceProvider"
+      ]
+    }
+  },
+
   "minimum-stability": "dev",
   "prefer-stable": true,
   "optimize-autoloader": true
