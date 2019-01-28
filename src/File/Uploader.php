@@ -1,7 +1,6 @@
 <?php
-namespace UploadFile\File;
+namespace Wubuze\UploadFile\File;
 
-//use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\UploadedFile;
 use App\Model\File\File;
 

@@ -1,13 +1,13 @@
-# 上传文件
+# Laravel 上传文件
 
 ## 安装
 * composer require wubuze/upload-file
 
-- app\config\app.php 文件中provider 加上
+- app\config\app.php 文件中provider 加上, laravel5.5 以上可以忽略
 
-* UploadFile\UfffServiceProvider::class,
+* Wubuze\UploadFile\UfffServiceProvider::class,
 
-*   php artisan vendor:publish
+*   php artisan vendor:publish   , 选择 wubuze-file-config
 
 - 生成的storage.php 文件里面可以配置文件上传路径
 
@@ -29,12 +29,3 @@
 - $file->setUrl();
 
 - return @[ 'id' => $file->id, 'url' => $file->url, 'top' => $file->top, 'name' => $file->file.'.'.$file->type, ];
-
-
-# system 模块
-
-## 安装
-
-- make:system
-
-- vendor:publish

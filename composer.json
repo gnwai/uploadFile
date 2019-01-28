@@ -10,13 +10,13 @@
   "require-dev": {},
   "autoload": {
       "psr-4": {
-          "UploadFile\\": "src"
+          "Wubuze\\UploadFile\\": "src"
       }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "UploadFile\\UploadFileServiceProvider"
+        "Wubuze\\UploadFile\\UploadFileServiceProvider"
       ]
     }
   },

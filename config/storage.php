@@ -14,10 +14,9 @@
 
 return [
 
-
-    'userPhoto' => [
-        'dir' => 'user-photo',
-        'public' => true,
+    'userPhoto' => [  
+        'dir' => 'user-photo',  //文件上传目录
+        'public' => true,   //文件是否公开
     ],
 
 

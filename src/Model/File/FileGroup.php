@@ -1,6 +1,6 @@
 <?php
 
-namespace UploadFile\Model\File;
+namespace Wubuze\UploadFile\Model\File;
 
 use Illuminate\Database\Eloquent\Model;
 

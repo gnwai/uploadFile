@@ -1,5 +1,5 @@
 <?php
-namespace UploadFile\File;
+namespace Wubuze\UploadFile\File;
 
 use App\Model\File\File;
 

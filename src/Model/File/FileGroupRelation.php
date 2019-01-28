@@ -1,8 +1,8 @@
 <?php
 
-namespace UploadFile\Model\File;
+namespace Wubuze\UploadFile\Model\File;
 
-//use G2B2G\Contracts\Eloquent\Translate\Base;
+
 
 trait FileGroupRelation
 {

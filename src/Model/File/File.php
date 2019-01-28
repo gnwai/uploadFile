@@ -1,9 +1,8 @@
 <?php
 
-namespace UploadFile\Model\File;
+namespace Wubuze\UploadFile\Model\File;
 
 use Illuminate\Database\Eloquent\Model;
-//use G2B2G\Contracts\Eloquent\Translate\ModelProperty;
 
 class File extends Model
 {
