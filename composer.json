@@ -4,8 +4,7 @@
   "license": "MIT",
   "keywords": ["upload file", "upload img"],
   "require": {
-    "php": ">= 5.4",
-    "jdavidbakr/replaceable-model": "^1.0"
+    "php": ">= 5.4"
   },
   "require-dev": {},
   "autoload": {
